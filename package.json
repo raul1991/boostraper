@@ -1,0 +1,27 @@
+{
+  "name": "bootstrapper",
+  "version": "1.0.0",
+  "description": "A bootstrap application with mongo as the database, python/flask as the backend, nodejs as a front end package manager and angular for the front end.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raul1991/bootstrapper.git"
+  },
+  "keywords": [
+    "scaffolding",
+    "python",
+    "flask",
+    "angular",
+    "npm",
+    "gulp"
+  ],
+  "author": "Rahul Bawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raul1991/bootstrapper/issues"
+  },
+  "homepage": "https://github.com/raul1991/bootstrapper#readme"
+}
