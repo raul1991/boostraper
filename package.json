@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/raul1991/bootstrapper/issues"
   },
-  "homepage": "https://github.com/raul1991/bootstrapper#readme"
+  "homepage": "https://github.com/raul1991/bootstrapper#readme",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
 }
