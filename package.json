@@ -4,7 +4,7 @@
   "description": "A bootstrap application with mongo as the database, python/flask as the backend, nodejs as a front end package manager and angular for the front end.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "http-server . -p 9000"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/raul1991/bootstrapper#readme",
   "dependencies": {
-    "angular": "^1.6.4"
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "html5-boilerplate-npm": "^4.1.0-B",
+    "http-server": "^0.10.0"
   }
 }
