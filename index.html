@@ -1,18 +1,19 @@
-<html>
+<html ng-app="bootstrapper">
     <head>
         <title>Bootstrap project</title>
-        <link rel="stylesheet" type="text/css" href="node_modules/html5-boilerplate-npm/css/main.css"></link>
-        <link rel="stylesheet" type="text/css" href="node_modules/html5-boilerplate-npm/css/normalize.css"></link>
-        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"></link>
+        <link rel="stylesheet" type="text/css" href="../node_modules/html5-boilerplate-npm/css/main.css"></link>
+        <link rel="stylesheet" type="text/css" href="../node_modules/html5-boilerplate-npm/css/normalize.css"></link>
+        <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css"></link>
     </head>
-    <body>
-        <h1>Hello, World!!!</h1>
+    <body ng-controller="IndexPageController">
+        <h1>{{message}}</h1>
         <h5>If you are seeing this, probably everything went well in the front end atleast</h5>
 
         <!-- bootstrap scripts-->
-        <script type="text/javascript" src="node_modules/html5-boilerplate-npm/js/vendor/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="node_modules/html5-boilerplate-npm/js/vendor/modernizr-2.6.2.min.js"></script>
-        <script type="text/javascript" src="node_modules/html5-boilerplate-npm/js/vendor/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../node_modules/html5-boilerplate-npm/js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../node_modules/html5-boilerplate-npm/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
