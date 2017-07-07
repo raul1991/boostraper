@@ -6,14 +6,15 @@
         <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css"></link>
     </head>
     <body ng-controller="IndexPageController">
-        <h1>{{message}}</h1>
-        <h5>If you are seeing this, probably everything went well in the front end atleast</h5>
-
+        <pre>Index page</pre>
+        <a ui-sref="home">home</a>
+        <div class="container" ui-view></div>
         <!-- bootstrap scripts-->
         <script type="text/javascript" src="../node_modules/html5-boilerplate-npm/js/vendor/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="../node_modules/html5-boilerplate-npm/js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
         <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/lib/angular-ui-router.min.js"></script>
         <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
