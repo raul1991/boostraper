@@ -4,7 +4,7 @@ angular.module("bootstrapper",["ui.router"])
 	$scope.testConnection = function() {
 		var PROD = true;
 		$http({
-			"url" : PROD ? "//bootstrapper-raul1991.herokuapp.com:$PORT/home" : "//localhost:$PORT/home",
+			"url" : PROD ? "/home" : "//localhost:$PORT/home",
 			"method" : "GET"
 		}).then(function successCallback(response) {
 		    // this callback will be called asynchronously

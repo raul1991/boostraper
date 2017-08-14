@@ -1,4 +1,5 @@
 #!/bin/bash
-
-sed -i -e 's/$PORT/'"$1"'/g' server/static/js/bootstrapper.bundle.min.js
-flask run --host=0.0.0.0 --port $1
+#echo $PORT >> ~/.bashrc
+export FLASK_APP=server/server.py
+sed -i -e 's/$PORT/'"$PORT"'/g' /app/server/static/js/bootstrapper.bundle.min.js
+flask run --host=0.0.0.0 --port $PORT
