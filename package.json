@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A bootstrap application with mongo as the database, python/flask as the backend, nodejs as a front end package manager and angular for the front end.",
   "main": "index.html",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raul1991/bootstrapper.git"
@@ -26,8 +25,16 @@
   "dependencies": {
     "angular": "^1.6.4",
     "bootstrap": "^3.3.7",
-    "gulp": "^3.9.1",
-    "html5-boilerplate-npm": "^4.1.0-B",
-    "http-server": "^0.10.0"
+    "html5-boilerplate-npm": "^4.1.0-B"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
   }
 }

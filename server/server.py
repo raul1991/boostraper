@@ -1,10 +1,12 @@
 import flask
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-        resp = flask.Response("Hello, World!")
-        resp.headers['Access-Control-Allow-Origin'] = '*'
-        return resp
+        return render_template('index.html')
+
+@app.route('/home')
+def home():
+        return "Home Page"

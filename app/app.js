@@ -1,18 +1,19 @@
-angular.module("bootstrapper",['ui.router'])
-.controller("IndexPageController", ['$scope', '$http', function($scope, $http) {
+angular.module("bootstrapper",["ui.router"])
+.controller("IndexPageController", ["$scope", "$http", function($scope, $http) {
 	$scope.message = "Hello, World!!!";
 	$scope.testConnection = function() {
+		var PROD = true;
 		$http({
-			'url' : 'https://bootstrapper-raul1991.herokuapp.com:33507',
-			'method' : 'GET'
+			"url" : PROD ? "//bootstrapper-raul1991.herokuapp.com:$PORT/home" : "//localhost:$PORT/home",
+			"method" : "GET"
 		}).then(function successCallback(response) {
 		    // this callback will be called asynchronously
 		    // when the response is available
-		    console.log("Success"+response);
+		    console.log("Congratulations, we are able to connect to the backend flask server");
 		}, function errorCallback(response) {
 		    // called asynchronously if an error occurs
 		    // or server returns response with an error status.
-		    console.log("failure"+ response);
+		    console.log("Connection unsuccessful"+ response);
 		});
 	};
 }])
@@ -20,8 +21,8 @@ angular.module("bootstrapper",['ui.router'])
     //it is for ui-router unwanted errors.
     $qProvider.errorOnUnhandledRejections(false);
     $stateProvider
-    .state('home', {
+    .state("home", {
     	url: "/home",
-    	templateUrl: '/app/partials/home.html'
+    	templateUrl: "static/partials/home.html"
     });
 });

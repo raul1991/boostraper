@@ -1,0 +1,16 @@
+<html ng-app="bootstrapper">
+    <head>
+        <title>Bootstrap project</title>
+        <link rel="stylesheet" type="text/css" href="static/css/main.css"></link>
+        <link rel="stylesheet" type="text/css" href="static/css/normalize.css"></link>
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css"></link>
+    </head>
+    <body ng-controller="IndexPageController">
+        <pre>Index page</pre>
+	<button class="btn btn-primary" ng-click="testConnection()">Click me</button>
+        <a ui-sref="home">home</a>
+        <div class="container" ui-view></div>
+        <!-- bundled scripts-->
+        <script type="text/javascript" src="static/js/bootstrapper.bundle.min.js"></script>
+    </body>
+</html>
