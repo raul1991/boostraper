@@ -2,7 +2,7 @@ angular.module("bootstrapper",["ui.router"])
 .controller("IndexPageController", ["$scope", "$http", function($scope, $http) {
 	$scope.message = "Hello, World!!!";
 	$scope.testConnection = function() {
-		var PROD = true;
+		var PROD = false;
 		$http({
 			"url" : PROD ? "/home" : "//localhost:$PORT/home",
 			"method" : "GET"
