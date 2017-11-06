@@ -3,7 +3,7 @@ A bootstrap application with mongo as the database, python/flask as the backend,
 
 ### NOTE
   
-  Change the PROD variable inside app/app.js to `false` when running locally.
+  Change the PROD variable inside app/app.js to `true` when running in production.
 
 ### How to install
 
